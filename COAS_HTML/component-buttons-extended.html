@@ -1,0 +1,710 @@
+﻿<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="KITS">
+    <title>Buttons Extended - COAS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/ico/favicon.ico">
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/feather/style.min.css">
+    <!-- END: Theme CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/core/menu/menu-types/vertical-menu-modern.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/core/colors/palette-gradient.min.css">
+    <!-- END: Page CSS-->
+</head>
+<!-- END: Head-->
+<!-- BEGIN: Body-->
+<body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-lg-none mr-auto">
+                        <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                            <i class="ft-menu font-large-1"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-auto">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="brand-logo" alt="stack admin logo" src="assets/images/logo/stack-logo-light.png">
+                            <h2 class="brand-text">Stack</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link nav-link-expand" href="#">
+                                <i class="ficon ft-maximize"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-search">
+                            <a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+                            <div class="search-input">
+                                <input class="input" type="text" placeholder="Explore Stack...">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-notification nav-item">
+                            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+                                <i class="ficon ft-bell"></i>
+                                <span class="badge badge-pill badge-danger badge-up">5</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0">
+                                        <span class="grey darken-2">Notifications</span>
+                                        <span class="notification-tag badge badge-danger float-right m-0">5 New</span>
+                                    </h6>
+                                </li>
+                                <li class="scrollable-container media-list">
+                                    <a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">You have new order!</h6>
+                                                <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">30 minutes ago</time>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-download-cloud icon-bg-circle bg-red bg-darken-1"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading red darken-1">99% Server load</h6>
+                                                <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Five hour ago</time>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                                                <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-check-circle icon-bg-circle bg-cyan"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Complete the task</h6><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last week</time>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a><a href="javascript:void(0)">
+                                        <div class="media">
+                                            <div class="media-left align-self-center"><i class="ft-file icon-bg-circle bg-teal"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Generate monthly report</h6><small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last month</time>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <span class="avatar avatar-online">
+                                    <img src="assets/images/portrait/small/avatar-s-1.png" alt="avatar">
+                                    <i></i>
+                                </span>
+                                <span class="user-name">John Doe</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="user-profile.html">
+                                    <i class="ft-user"></i> Edit Profile
+                                </a>
+                                <a class="dropdown-item" href="app-email.html">
+                                    <i class="ft-mail"></i> My Inbox
+                                </a>
+                                <a class="dropdown-item" href="user-cards.html">
+                                    <i class="ft-check-square"></i> Task
+                                </a>
+                                <a class="dropdown-item" href="app-chat.html">
+                                    <i class="ft-message-square"></i> Chats
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login-with-bg-image.html">
+                                    <i class="ft-power"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" navigation-header">
+                    <span>General</span><i class=" ft-minus" data-toggle="tooltip" data-placement="right" data-original-title="General"></i>
+                </li>
+                <li class="nav-item active">
+                    <a href="index.html"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
+                </li>
+                <li class=" navigation-header">
+                    <span>Apps</span><i class=" ft-minus" data-toggle="tooltip" data-placement="right" data-original-title="Apps"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><i class="ft-check-square"></i><span class="menu-title" data-i18n="">Timelines</span></a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="menu-item" href="#">Timelines Center</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#">Timelines Horizontal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item">
+                    <a href="#"><i class="ft-user"></i><span class="menu-title" data-i18n="">Users</span></a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="menu-item" href="#">Users Profile</a>
+                        </li>
+                        <li>
+                            <a class="menu-item" href="#">Users Cards</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2">
+                    <h3 class="content-header-title mb-0">Buttons Extended</h3>
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Components</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Buttons Extended
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-body">
+                <!-- Floating Buttons start-->
+                <section id="floating-point">
+                    <div class="row">
+                        <div class="col-12 mb-1">
+                            <h4 class="text-uppercase">Floating Buttons</h4>
+                            <p>Floating action buttons are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI and have special motion behaviors related to morphing, launching, and the transferring anchor point. </p>
+                            <p>Use the class <code>.btn</code> along with class <code>.btn-float</code>.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Floating Buttons</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Floating icon button Regular -->
+                                                    <a href="#" class="btn btn-float btn-square btn-secondary"><i class="fa fa-thumbs-o-up"></i></a>
+                                                    <a href="#" class="btn btn-float btn-square btn-float-lg btn-primary"><i class="fa fa-camera"></i></a>
+                                                    <a href="#" class="btn btn-float btn-square btn-secondary"><i class="fa fa-thumbs-o-down"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Floating button Regular with text -->
+                                                    <a href="#" class="btn btn-float btn-cyan"><i class="fa fa-search"></i><span>search</span></a>
+                                                    <a href="#" class="btn btn-float btn-float-lg btn-pink"><i class="fa fa-cloud-download"></i><span>Downloads</span></a>
+                                                    <a href="#" class="btn btn-float btn-cyan"><i class="fa fa-refresh"></i><span>refresh</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Regular Round Floating button -->
+                                                    <a href="#" class="btn btn-float btn-round btn-secondary"><i class="fa fa-thumbs-o-up"></i></a>
+                                                    <a href="#" class="btn btn-float btn-round btn-float-lg btn-primary"><i class="fa fa-camera"></i></a>
+                                                    <a href="#" class="btn btn-float btn-round btn-secondary"><i class="fa fa-thumbs-o-down"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Floating Buttons end -->
+                <!-- Floating Outline Buttons start-->
+                <section id="floating-outline-buttons">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Floating Outline Buttons</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Floating icon Outline button -->
+                                                    <button type="button" class="btn btn-float btn-square btn-outline-secondary"><i class="fa fa-thumbs-o-up"></i></button>
+                                                    <button type="button" class="btn btn-float btn-square btn-float-lg btn-outline-primary"><i class="fa fa-camera"></i></button>
+                                                    <button type="button" class="btn btn-float btn-square btn-outline-secondary"><i class="fa fa-thumbs-o-down"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Floating Outline button with text -->
+                                                    <button type="button" class="btn btn-float btn-outline-cyan"><i class="fa fa-search"></i><span>search</span></button>
+                                                    <button type="button" class="btn btn-float btn-float-lg btn-outline-pink"><i class="fa fa-cloud-download"></i><span>Downloads</span></button>
+                                                    <button type="button" class="btn btn-float btn-outline-cyan"><i class="fa fa-refresh"></i><span>refresh</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Outline Round Floating button -->
+                                                    <button type="button" class="btn btn-float btn-outline-secondary btn-round"><i class="fa fa-thumbs-o-up"></i></button>
+                                                    <button type="button" class="btn btn-float btn-float-lg btn-outline-primary btn-round"><i class="fa fa-camera"></i></button>
+                                                    <button type="button" class="btn btn-float btn-outline-secondary btn-round"><i class="fa fa-thumbs-o-down"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Floating Outline Buttons end -->
+                <!-- Social Buttons for Bootstrap start-->
+                <section id="social-buttons">
+                    <div class="row mt-3">
+                        <div class="col-12 mb-1">
+                            <h4 class="text-uppercase">Social Buttons for Bootstrap</h4>
+                            <p>Buttons with built-in loading indicators, effectively bridging the gap between action and feedback.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Social Media Buttons</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group">
+                                                    <!-- Social Buttons with Social Name -->
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-reddit"><span class="fa fa-reddit font-medium-3"></span> Reddit</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-twitter"><span class="fa fa-twitter"></span> Twitter</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-github"><i class="fa fa-github font-medium-3"></i> Github</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-soundcloud"><span class="fa fa-soundcloud"></span> Soundcloud</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-vimeo"><span class="fa fa-vimeo-square font-medium-3"></span> Vimeo</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-pinterest"><span class="fa fa-pinterest-p font-medium-3"></span> Pinterest</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-tumblr"><span class="fa fa-tumblr font-medium-3"></span> Tumblr</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mr-1 mb-1 btn-yahoo"><span class="fa fa-yahoo font-medium-3"></span> Yahoo</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <!-- Social Icon Buttons -->
+                                                <div class="form-group">
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-adn"><span class="fa fa-adn"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-bitbucket"><span class="fa fa-bitbucket font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-dropbox"><span class="fa fa-dropbox font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-facebook"><span class="fa fa-facebook"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-flickr"><span class="fa fa-flickr font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-foursquare"><span class="fa fa-foursquare font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-github"><span class="fa fa-github font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-google"><span class="fa fa-google font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-instagram"><span class="fa fa-instagram font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-linkedin"><span class="fa fa-linkedin font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-microsoft"><span class="fa fa-windows font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-odnoklassniki"><span class="fa fa-odnoklassniki font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-openid"><span class="fa fa-openid font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-pinterest"><span class="fa fa-pinterest-p font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-reddit"><span class="fa fa-reddit font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-tumblr"><span class="fa fa-tumblr font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-twitter"><span class="fa fa-twitter"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-vimeo"><span class="fa fa-vimeo-square font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-vk"><span class="fa fa-vk font-medium-3"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-yahoo"><span class="fa fa-yahoo font-medium-3"></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1 social-buttons">
+                                                <div class="form-group">
+                                                    <!-- Social Buttons large name -->
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-adn"><span class="fa fa-adn font-medium-3"></span> Sign in with App.net</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-dropbox"><span class="fa fa-dropbox font-medium-3"></span> Sign in with dropbox</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-flickr"><span class="fa fa-flickr font-medium-3"></span> Sign in with flickr</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-github"><span class="fa fa-github font-medium-3"></span> Sign in with github</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-google"><span class="fa fa-google font-medium-3"></span> Sign in with google</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-facebook"><span class="fa fa-facebook"></span> Sign in with facebook</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-foursquare"><span class="fa fa-foursquare font-medium-3"></span> Sign in with foursquare</a>
+                                                    <a href="#" class="btn btn-social width-200 mr-1 mb-1 btn-bitbucket"><span class="fa fa-bitbucket font-medium-3"></span> Sign in with bitbucket</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Social Buttons for Bootstrap end -->
+                <!-- Social Media Buttons Size start-->
+                <section id="social-buttons-sizes">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Social Media Buttons Size</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group">
+                                                    <!-- Social Buttons block size-->
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-github"><i class="fa fa-github"></i> Github</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-soundcloud"><span class="fa fa-soundcloud"></span> Soundcloud</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-flickr"><span class="fa fa-flickr"></span> Flickr</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Social Buttons sizes -->
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-lg btn-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-sm btn-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-xs btn-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-lg btn-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-sm btn-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-xs btn-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Social icon Buttons Sizes -->
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-lg btn-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-sm btn-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-xs btn-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social-icon btn-lg mb-1 mr-1 btn-github"><i class="fa fa-github"></i></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-github"><i class="fa fa-github"></i></a>
+                                                            <a href="#" class="btn btn-social-icon btn-sm mb-1 mr-1 btn-github"><i class="fa fa-github"></i></a>
+                                                            <a href="#" class="btn btn-social-icon btn-xs mb-1 mr-1 btn-github"><i class="fa fa-github"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1 social-buttons">
+                                                <div class="form-group">
+                                                    <!-- Social Buttons block sizes -->
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-lg btn-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-sm btn-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-xs btn-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Social Media Buttons Size end -->
+                <!-- Social Media Outline Buttons start-->
+                <section id="social-outline-buttons">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Social Media Outline Buttons</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group">
+                                                    <!-- Social Outline Buttons -->
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-reddit"><span class="fa fa-reddit font-medium-4"></span> Reddit</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-twitter"><span class="fa fa-twitter font-medium-4"></span> Twitter</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-github"><i class="fa fa-github font-medium-4"></i> Github</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-soundcloud"><span class="fa fa-soundcloud"></span> Soundcloud</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-vimeo"><span class="fa fa-vimeo-square font-medium-4"></span> Vimeo</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-pinterest"><span class="fa fa-pinterest-p font-medium-4"></span> Pinterest</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-tumblr"><span class="fa fa-tumblr font-medium-4"></span> Tumblr</a>
+                                                    <a href="#" class="btn btn-social btn-min-width mb-1 mr-1 btn-outline-yahoo"><span class="fa fa-yahoo font-medium-4"></span> Yahoo</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group">
+                                                    <!-- Social Icons Outline Buttons -->
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-adn"><span class="fa fa-adn"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-bitbucket"><span class="fa fa-bitbucket font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-dropbox"><span class="fa fa-dropbox font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-facebook"><span class="fa fa-facebook"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-flickr"><span class="fa fa-flickr font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-foursquare"><span class="fa fa-foursquare font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-github"><span class="fa fa-github font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-google"><span class="fa fa-google font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-instagram"><span class="fa fa-instagram font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-linkedin"><span class="fa fa-linkedin font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-microsoft"><span class="fa fa-windows font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-odnoklassniki"><span class="fa fa-odnoklassniki font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-openid"><span class="fa fa-openid font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-pinterest"><span class="fa fa-pinterest-p font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-reddit"><span class="fa fa-reddit font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-tumblr"><span class="fa fa-tumblr font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-twitter"><span class="fa fa-twitter"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-vimeo"><span class="fa fa-vimeo-square font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-vk"><span class="fa fa-vk font-medium-4"></span></a>
+                                                    <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-yahoo"><span class="fa fa-yahoo font-medium-4"></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1 social-buttons">
+                                                <div class="form-group">
+                                                    <!-- Social Outline Buttons with text -->
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-adn"><span class="fa fa-adn font-medium-4"></span> Sign in with App.net</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-dropbox"><span class="fa fa-dropbox font-medium-4"></span> Sign in with dropbox</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-flickr"><span class="fa fa-flickr font-medium-4"></span> Sign in with flickr</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-github"><span class="fa fa-github font-medium-4"></span> Sign in with github</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-google"><span class="fa fa-google font-medium-4"></span> Sign in with google</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-facebook"><span class="fa fa-facebook"></span> Sign in with facebook</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-foursquare"><span class="fa fa-foursquare font-medium-4"></span> Sign in with foursquare</a>
+                                                    <a href="#" class="btn btn-social width-200 mb-1 mr-1 btn-outline-bitbucket"><span class="fa fa-bitbucket font-medium-4"></span> Sign in with bitbucket</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Social Media Outline Buttons end -->
+                <!-- Social Media Outline Buttons Size start-->
+                <section id="social-outline-buttons-sizes">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Social Media Outline Buttons Size</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group">
+                                                    <!-- Social Outline Block Buttons Here-->
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-outline-github"><i class="fa fa-github"></i> Github</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-outline-soundcloud"><span class="fa fa-soundcloud"></span> Soundcloud</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-outline-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-outline-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                    <a href="#" class="btn btn-social btn-block mb-1 btn-outline-flickr"><span class="fa fa-flickr"></span> Flickr</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1">
+                                                <div class="form-group text-center">
+                                                    <!-- Social Outline Buttons sizes -->
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-lg btn-outline-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-outline-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-sm btn-outline-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-xs btn-outline-yahoo"><span class="fa fa-yahoo"></span> Yahoo</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-lg btn-outline-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-outline-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-sm btn-outline-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                            <a href="#" class="btn btn-social mb-1 mr-1 btn-xs btn-outline-vimeo"><span class="fa fa-vimeo-square"></span> Vimeo</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Social Outline Icon Buttons sizes -->
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-lg btn-outline-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-outline-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-sm btn-outline-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-xs btn-outline-soundcloud"><span class="fa fa-soundcloud"></span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <a href="#" class="btn btn-social-icon btn-lg mb-1 mr-1 btn-outline-github"><i class="fa fa-github"></i></a>
+                                                            <a href="#" class="btn btn-social-icon mb-1 mr-1 btn-outline-github"><i class="fa fa-github"></i></a>
+                                                            <a href="#" class="btn btn-social-icon btn-sm mb-1 mr-1 btn-outline-github"><i class="fa fa-github"></i></a>
+                                                            <a href="#" class="btn btn-social-icon btn-xs mb-1 mr-1 btn-outline-github"><i class="fa fa-github"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-12 mb-1 social-buttons">
+                                                <div class="form-group">
+                                                    <!-- Social Outline block Buttons sizes -->
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-lg btn-outline-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-outline-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-sm btn-outline-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                    <a href="#" class="btn btn-social mb-1 btn-block btn-xs btn-outline-pinterest"><span class="fa fa-pinterest-p"></span> Sign in with Pinterest</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Social Media Outline Buttons Size end -->
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light navbar-border">
+        <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">
+                Copyright  &copy; 2019
+                <a class="text-bold-800 grey darken-2" href="http://kreativesit.com" target="_blank">KITS</a>
+            </span>
+            <span class="float-md-right d-none d-lg-block">COAS<i class="ft-home pink"></i></span>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="assets/js/core/app-menu.min.js"></script>
+    <script src="assets/js/core/app.min.js"></script>
+    <script src="assets/js/scripts/customizer.min.js"></script>
+    <!-- END: Theme JS-->
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+</body>
+</html>
