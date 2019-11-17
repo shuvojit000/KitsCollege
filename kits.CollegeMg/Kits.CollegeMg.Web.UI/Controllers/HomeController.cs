@@ -26,5 +26,7 @@ namespace Kits.CollegeMg.Web.UI.Controllers
 
             return View();
         }
+        public ActionResult LogIn() => View();
+        
     }
 }
