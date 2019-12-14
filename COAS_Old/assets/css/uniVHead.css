@@ -1,0 +1,64 @@
+/* css
+--------------------------------------------------------------------------------------------------------------- */
+span.cls_001b {
+    font-family: Times,serif;
+    font-size: 13px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+span.cls_007 {
+    font-family: Times,serif;
+    font-size: 22px;
+    color: rgb(0,0,0);
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+
+span.cls_007a {
+    font-family: Times,serif;
+    font-size: 15px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+span.cls_007b {
+    font-family: Times,serif;
+    font-size: 15px;
+    color: rgb(0,0,0);
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+
+p.cls_008 {
+    font-family: Times,serif;
+    font-size: 14px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+span.cls_008b {
+    font-family: Times,serif;
+    font-size: 14px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.chkSty {
+  width: 20px; 
+  height: 20px;
+  display: block; 
+}
+.chkStyP{
+text-align:right;
+}

@@ -1,0 +1,16 @@
+﻿
+
+
+/* Comments */
+#comments ul{margin:0; padding:0; list-style:none;}
+#comments li{margin:0; padding:10px;}
+#comments .avatar{float:right; margin-top:-10px;}
+#comments address{font-weight:bold; font-family:'Book Antiqua'; font-size:16px;}
+#comments time{font-size:smaller; font-family:'Californian FB'; font-style:italic; padding-left:5%;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+
+
+
+
+

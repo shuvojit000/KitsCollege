@@ -197,11 +197,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CollegeAdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomPrincipalSerializeModel.cs" />
+    <Compile Include="Models\RegistrationModel.cs" />
+    <Compile Include="Models\StudentLogInModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -454,6 +457,7 @@
     <Content Include="Content\assets\js\scripts\pages\project-summary-task.min.js" />
     <Content Include="Content\assets\js\scripts\pages\timeline.min.js" />
     <Content Include="Content\assets\js\scripts\pagination\pagination.js" />
+    <Content Include="Content\assets\js\scripts\pickers\dateTime\bootstrap-datepicker.js" />
     <Content Include="Content\assets\js\scripts\pickers\dateTime\bootstrap-datetime.min.js" />
     <Content Include="Content\assets\js\scripts\pickers\dateTime\pick-a-datetime.min.js" />
     <Content Include="Content\assets\js\scripts\popover\popover.min.js" />
@@ -752,6 +756,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\LogIn.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\CollegeAdmin\CollegeAdmission.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -761,6 +767,12 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kits.CollegeMg.CollegeService\Kits.CollegeMg.CollegeService.csproj">
+      <Project>{bd99f0d3-040a-447e-9106-3253fea272b4}</Project>
+      <Name>Kits.CollegeMg.CollegeService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

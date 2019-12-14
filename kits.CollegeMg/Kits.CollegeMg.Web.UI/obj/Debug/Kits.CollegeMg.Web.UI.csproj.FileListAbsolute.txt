@@ -80,3 +80,5 @@ D:\Kreative\kits.CollegeMg\Kits.CollegeMg.Web.UI\bin\Microsoft.Owin.Security.Twi
 D:\Kreative\kits.CollegeMg\Kits.CollegeMg.Web.UI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Kreative\kits.CollegeMg\Kits.CollegeMg.Web.UI\obj\Debug\Kits.CollegeMg.Web.UI.dll
 D:\Kreative\kits.CollegeMg\Kits.CollegeMg.Web.UI\obj\Debug\Kits.CollegeMg.Web.UI.pdb
+D:\Kreative\kits.CollegeMg\Kits.CollegeMg.Web.UI\bin\Kits.CollegeMg.CollegeService.dll
+D:\Kreative\kits.CollegeMg\Kits.CollegeMg.Web.UI\bin\Kits.CollegeMg.CollegeService.pdb

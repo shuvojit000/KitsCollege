@@ -1,0 +1,234 @@
+
+.widget-toolbar-k {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 37px;
+    float: right;
+    position: relative;
+}
+
+/*----------seipkon---------*/
+.open>.dropdown-menu-k.profile-box {
+	position: absolute;
+}
+
+.profile-box {
+	position: relative;
+	z-index: 1;
+	background: #fff none repeat scroll 0 0;
+}
+
+.profile-box {
+	border: medium none;
+	padding: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+.profile-box>ul>li {
+	margin: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.profile-box>ul>li:last-child {
+	border-bottom: 0px solid #eee
+}
+
+.profile-box>ul>li>a {
+	display: block;
+	padding: 7px 10px;
+	color: #333;
+	font-size: 14px;
+	text-transform: capitalize;
+    text-decoration:none;
+}
+
+.profile-box>ul>li>a:hover {
+	background: #efefef none repeat scroll 0 0
+}
+
+.profile-box>ul>li>a>i {
+	margin-right: 5px;
+	color: #1CD2C9;
+	width: 20px;
+	text-align: center;
+}
+
+.breadcrumbs ul li>a.profile-toggle-k {
+	padding: 14px 10px;
+	overflow: hidden;
+}
+.breadcrumbs .dropdown-toggle-k:focus {
+	outline: medium none !important
+}
+
+
+/*----------bootstrap.min---------*/
+@media (min-width:768px) {
+    .breadcrumbs .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+
+    .breadcrumbs .dropdown-menu-left {
+        right: auto;
+        left: 0;
+    }
+}
+
+.dropdown-menu-k {
+    position: absolute; overflow:hidden;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+    .dropdown-menu-k.pull-right {
+        right: 0;
+        left: auto;
+    }
+
+    .dropdown-menu-k .divider {
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+        background-color: #e5e5e5;
+    }
+
+    .dropdown-menu-k > li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+    }
+
+        .dropdown-menu-k > li > a:focus, .dropdown-menu-k > li > a:hover {
+            color: #262626;
+            text-decoration: none;
+            background-color: #f5f5f5;
+        }
+
+    .dropdown-menu-k > .active > a, .dropdown-menu-k > .active > a:focus, .dropdown-menu-k > .active > a:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: #337ab7;
+        outline: 0;
+    }
+
+    .dropdown-menu-k > .disabled > a, .dropdown-menu-k > .disabled > a:focus, .dropdown-menu-k > .disabled > a:hover {
+        color: #777;
+    }
+
+        .dropdown-menu-k > .disabled > a:focus, .dropdown-menu-k > .disabled > a:hover {
+            text-decoration: none;
+            cursor: not-allowed;
+            background-color: transparent;
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+        }
+
+.open > .dropdown-menu-k {
+    display: block;
+}
+
+.open > a {
+    outline: 0;
+}
+
+.dropdown-menu-k-right {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-menu-k-left {
+    right: auto;
+    left: 0;
+}
+
+
+
+.dropdown-k, .dropup {
+    position: relative;
+}
+.dropdown-toggle-k:focus {
+    outline: 0;
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle-k) {
+    border-radius: 0;
+}
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle-k) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-toggle-k:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle-k {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+.btn-group .dropdown-toggle-k:active, .btn-group.open .dropdown-toggle-k {
+    outline: 0;
+}
+.btn-group > .btn + .dropdown-toggle-k {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.btn-group > .btn-lg + .dropdown-toggle-k {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.btn-group.open .dropdown-toggle-k {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+    .btn-group.open .dropdown-toggle-k.btn-link {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+
+
+/*----------animate.min---------*/
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+

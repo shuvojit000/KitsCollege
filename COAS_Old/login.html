@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Login</title>
+    <meta name="description" content="User login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!--bootstrap & fontawesome-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font_awesome/css/font-awesome.min.css" />
+    <!--text fonts-->
+    <link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+    <!--page styles-->
+    <link rel="stylesheet" href="assets/css/ace.login.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <!--checkbox css-->
+    <link type="text/css" rel="stylesheet" href="assets/checkboxStyle/pretty-checkbox.min.css" />
+</head>
+<body class="login-layout light-login">
+    <!--Main Section Start-->
+    <div class="main-container">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <!--<div class="login-container">-->
+                    <div class="center">
+                        <h1>
+                            <i class="fa">
+                                <a href="login.html"><img src="assets/images/logom.png" alt="KITS"></a>
+                            </i>
+                        </h1>
+                        <div class="space-6"></div>
+                        <span style="font-family: 'Book Antiqua'; font-weight: 400; line-height: 1.1; color: inherit; margin-bottom: 10px; font-size: 32px;">
+                            <i class="fa">
+                                <a href="#" style="font-family: Garamond; text-shadow:10px;">Office Automation System</a>
+                            </i>
+                        </span>
+                    </div>
+                    <div class="space-6"></div>
+
+                    <div class="position-relative">
+                        <!--Login Section Start-->
+                        <div id="login-box" class="login-box visible widget-box no-border login-container">
+                            <div class="widget-body">
+                                <div class="widget-main">
+                                    <h4 class="header blue lighter mini lbltxt">
+                                        <i class="ace-icon fa fa-user green"></i>
+                                        OAS - Login (Already Register User)
+                                    </h4>
+
+                                    <div class="space-6"></div>
+
+                                    <div>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix">
+                                                        <div class="lbspan"><font color="red">*</font>HS Registration Number :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input type="text" class="form-control" placeholder="HS Registration Number" />
+                                                            <i class="ace-icon fa fa-random"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix">
+                                                        <div class="lbspan"><font color="red">*</font>Date Of Birth :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input class="form-control" type="date" name="date" max="9999-12-31" />
+                                                            <i class="ace-icon fa fa-calendar"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix">
+                                                        <span>
+                                                            <img src="assets/images/captcha.jpg" class="cptimg" />
+                                                            <a href="#" class="refikon"><i class="ace-icon fa fa-refresh"></i></a>
+                                                            <input type="text" class="form-control inpbw" />
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix">
+                                                <center>
+                                                    <button type="button" class="btn btn-sm btn-primary" onclick="location.href = 'dashboard.html';">
+                                                        <i class="ace-icon fa fa-key"></i>
+                                                        <span class="bigger-110">Login</span>
+                                                    </button>
+                                                </center>
+                                            </div>
+                                            <div class="space-4"></div>
+                                        </fieldset>
+                                    </div>
+
+                                </div>
+
+                                <div class="toolbar clearfix">
+                                    <div>
+                                        <a href="#" data-target="#forgot-box" class="forgot-password-link">
+                                            <i class="ace-icon fa fa-arrow-left"></i>
+                                            I forgot my password
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" data-target="#signup-box" class="user-signup-link">
+                                            I want to register
+                                            <i class="ace-icon fa fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Login Section End-->
+                        <!--Forgotpassword Section Start-->
+                        <div id="forgot-box" class="forgot-box widget-box no-border login-container">
+                            <div class="widget-body">
+                                <div class="widget-main">
+                                    <h4 class="header red lighter mini lbltxt">
+                                        <i class="ace-icon fa fa-key"></i>
+                                        Retrieve Password
+                                    </h4>
+
+                                    <div class="space-6"></div>
+
+                                    <div>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix">
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input type="email" class="form-control" placeholder="Email" />
+                                                            <i class="ace-icon fa fa-envelope"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix">
+                                                <button type="button" class="width-35 pull-right btn btn-sm btn-danger">
+                                                    <i class="ace-icon fa fa-lightbulb-o"></i>
+                                                    <span class="bigger-110">Send Me!</span>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="toolbar center">
+                                    <a href="#" data-target="#login-box" class="back-to-login-link">
+                                        Back to login
+                                        <i class="ace-icon fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Forgotpassword Section End-->
+                        <!--Registration Section Start-->
+                        <div id="signup-box" class="signup-box widget-box no-border">
+                            <div class="widget-body">
+                                <div class="widget-main">
+                                    <h4 class="header green lighter mini lbltxt">
+                                        <i class="ace-icon fa fa-user blue"></i>
+                                        OAS - Registration (New User)
+                                    </h4>
+
+                                    <form>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix col-sm-6">
+                                                        <div class="lbspan"><font color="red">*</font>Name :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input type="text" class="form-control" placeholder="Enter Name" />
+                                                            <i class="ace-icon fa fa-user"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                    <div class="block clearfix col-sm-6">
+                                                        <div class="lbspan"><font color="red">*</font>Mobile Number :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input type="text" class="form-control" placeholder="Enter Mobile Number" />
+                                                            <i class="ace-icon fa fa-mobile"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix col-sm-6">
+                                                        <div class="lbspan"><font color="red">*</font>HS Registration Number :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input type="text" class="form-control" placeholder="HS Registration Number" />
+                                                            <i class="ace-icon fa fa-random"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                    <div class="block clearfix col-sm-6">
+                                                        <div class="lbspan"><font color="red">*</font>Date Of Birth :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input class="form-control" type="date" name="date" />
+                                                            <i class="ace-icon fa fa-calendar"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="block clearfix col-sm-6">
+                                                        <div class="lbspan"><font color="red">*</font>Email Id :</div>
+                                                        <span class="block input-icon input-icon-right">
+                                                            <input type="email" class="form-control" placeholder="Enter Email Id" />
+                                                            <i class="ace-icon fa fa-envelope"></i>
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                    <div class="block clearfix col-sm-6">
+                                                        <div class="lbspan"><font color="red">*</font>Verification Code :</div>
+                                                        <span>
+                                                            <img src="assets/images/captcha.jpg" class="cptimg" />
+                                                            <a href="#" class="refikon"><i class="ace-icon fa fa-refresh"></i></a>
+                                                            <input type="text" class="form-control inpbw" />
+                                                        </span>
+                                                        <div class="space-6"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="block">
+                                                <div class="col-xs-1 chkStyP">
+                                                    <div class="pretty p-image p-plain">
+                                                        <input type="checkbox" name="verfk" />
+                                                        <div class="state">
+                                                            <img class="image" src="assets/images/ikon/tick.png">
+                                                            <label>
+                                                                &nbsp; <span class="lbl">
+                                                                    I accept the
+                                                                    <a href="#">User Agreement</a>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="space-24"></div>
+
+                                            <div class="clearfix">
+                                                <center>
+                                                    <button type="reset" class="btn btn-sm">
+                                                        <i class="ace-icon fa fa-refresh"></i>
+                                                        <span class="bigger-110">Reset</span>
+                                                    </button>
+                                                    &nbsp;
+                                                    <button type="button" class="btn btn-sm btn-success">
+                                                        <span class="bigger-110">Register</span>
+                                                        <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                                    </button>
+                                                </center>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                                <div class="toolbar center">
+                                    <a href="#" data-target="#login-box" class="back-to-login-link">
+                                        <i class="ace-icon fa fa-arrow-left"></i>
+                                        Back to login
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Registration Section End-->
+                    </div>
+
+                    <div class="space-6"></div>
+                    <div class="center" style="font-size:18px;">
+                        <i class="fa">
+                            Developed By : <a href="http://kreativesit.com/" style="font-family: Garamond; text-shadow:10px;">Kreatives IT Solution</a>
+                        </i>
+                    </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Section End-->
+    <!--Script File Section-->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jquery.mobile.custom.min.js"></script>
+    <!--inline scripts related to this page-->
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(document).on('click', '.toolbar a[data-target]', function (e) {
+                e.preventDefault();
+                var target = $(this).data('target');
+                $('.widget-box.visible').removeClass('visible');//hide others
+                $(target).addClass('visible');//show target
+            });
+        });
+        //you don't need this, just used for changing background
+        jQuery(function ($) {
+            $('#btn-login-dark').on('click', function (e) {
+                $('body').attr('class', 'login-layout');
+                $('#id-text2').attr('class', 'white');
+                $('#id-company-text').attr('class', 'blue');
+
+                e.preventDefault();
+            });
+            $('#btn-login-light').on('click', function (e) {
+                $('body').attr('class', 'login-layout light-login');
+                $('#id-text2').attr('class', 'grey');
+                $('#id-company-text').attr('class', 'blue');
+
+                e.preventDefault();
+            });
+            $('#btn-login-blur').on('click', function (e) {
+                $('body').attr('class', 'login-layout blur-login');
+                $('#id-text2').attr('class', 'white');
+                $('#id-company-text').attr('class', 'light-blue');
+
+                e.preventDefault();
+            });
+        });
+    </script>
+
+</body>
+</html>

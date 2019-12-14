@@ -1,4 +1,6 @@
-﻿using Kits.CollegeMg.Web.UI.Models;
+﻿using Kits.CollegeMg.CollegeService.Repository;
+using Kits.CollegeMg.CollegeService.Response;
+using Kits.CollegeMg.Web.UI.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using System.Web.Security;
 
 namespace Kits.CollegeMg.Web.UI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
@@ -19,23 +21,31 @@ namespace Kits.CollegeMg.Web.UI.Controllers
 
         public ActionResult LogIn() => View();
         [HttpPost]
-        public ActionResult LogIn(string returnUrl = "")
+        public ActionResult LogIn(StudentLogInModel model)
         {
+            SecurityRepository rep = new SecurityRepository();
             if (ModelState.IsValid)
             {
-                if (true)
+
+                LogInRes res = rep.GetStudentLogIn(new CollegeService.Request.LogInReq {
+                    DOB=model.DOB,
+                    HSRollNo=model.HSRollNo
+                });
+
+
+                if (res!=null)
                 {
 
 
                     CustomPrincipalSerializeModel serializeModel = new CustomPrincipalSerializeModel();
-                    serializeModel.UserId = 0;
+                    serializeModel.UserId = res.StudentID;
                     serializeModel.FirstName = "";
                     serializeModel.LastName = "";
 
                     string userData = JsonConvert.SerializeObject(serializeModel);
                     FormsAuthenticationTicket authTicket = new FormsAuthenticationTicket(
                     1,
-                    "a@gmail.com",
+                    DateTime.Now.ToString(),
                     DateTime.Now,
                     DateTime.Now.AddMinutes(15),
                     false, //pass here true, if you want to implement remember me functionality
@@ -61,5 +71,17 @@ namespace Kits.CollegeMg.Web.UI.Controllers
             return RedirectToAction("Login", "Account", null);
         }
 
+
+        
+        public ActionResult Register() => View();
+
+
+        [HttpPost]
+        public ActionResult Register(RegistrationModel model)
+        {
+
+
+            return View();
+        }
     }
 }
