@@ -44,7 +44,9 @@
     <Compile Include="Collges.cs" />
     <Compile Include="IColleges.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\CollegeApplicationRepository.cs" />
     <Compile Include="Repository\SecurityRepository.cs" />
+    <Compile Include="Request\CollegeApplicationFormReq.cs" />
     <Compile Include="Request\LogInReq.cs" />
     <Compile Include="Request\RegistrationReq.cs" />
     <Compile Include="Response\LogInRes.cs" />
